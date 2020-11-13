@@ -10,8 +10,8 @@ import {
    
   import Logout from "../Home/Home-Guest/Home-Guest"
   import Login from "../Login/Login"
-  import HomeUser from "../Home/Home-User/Home-User"
-  import Home from "../Home/Home-Guest/Home-Guest"
+  import User from "../Home/Home-User/Home-User"
+  import Guest from "../Home/Home-Guest/Home-Guest"
 
 class Navbar extends Component{
     state = { clicked: false }
@@ -27,7 +27,7 @@ class Navbar extends Component{
           <ul>
             
             <li>
-              <Link to="/home">Home</Link>
+              <Link to="/Guest">Home</Link>
             </li>
             <li>
               <Link to="/login">Login</Link>
@@ -37,7 +37,7 @@ class Navbar extends Component{
             </li>
             <li>
                  <picture>
-                      <img alt = " " height = "33" width = "66" src="https://s7d2.scene7.com/is/image/Caterpillar/CM20160629-33279-63115?fmt=png-alpha"></img>
+                      <img alt = " " height = "33" width = "66" className="CATLogo" src="https://s7d2.scene7.com/is/image/Caterpillar/CM20160629-33279-63115?fmt=png-alpha"></img>
                  </picture>
             </li>
           </ul>
@@ -52,11 +52,11 @@ class Navbar extends Component{
           <Route path="/login">
             <Login />
           </Route>
-          <Route path="/home">
-            <Home />
+          <Route path="/Guest">
+            <Guest />
           </Route>
-          <Route path="/Home-User">
-            <HomeUser />
+          <Route path="/User">
+            <User />
           </Route>
           
         </Switch>

@@ -1,0 +1,9 @@
+.icons{
+    height: 120 px;
+    width: 120px;
+    border: 10px solid black;
+    /* border-color: black; */
+}
+wrapper{
+    border: 10px solid black;
+}
